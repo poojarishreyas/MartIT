@@ -12,6 +12,8 @@ import BookSession from "./components/BookSession";
 import MArtAi from "./components/MartAi";
 import Pcbulder from "./components/Pcbulder";
 import Cart from "./components/Cart"
+import BecomeSeller from "./components/BecomeSeller";
+import Aboutus from "./components/About";
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
         <Route path="/Martai" element={<MArtAi/>}/>
         <Route path="/pcbuilder" element={<Pcbulder/>}/>
         <Route path="/Cart" element={<Cart/>}/>
+        <Route path="/becomeseller" element={<BecomeSeller/>}/>
+        <Route path="/aboutus" element={<Aboutus/>}/>
       </Routes>
     </>
   );

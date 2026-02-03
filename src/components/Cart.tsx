@@ -41,7 +41,7 @@ const initialCartItems: CartItem[] = [
   },
   {
     id: 2,
-    name: "QUANTUM SMARTPHONE",
+    name: "SMARTPHONE",
     description: "256GB | Cosmic Purple",
     price: 99900,
     quantity: 1,
@@ -69,7 +69,7 @@ const initialCartItems: CartItem[] = [
   },
   {
     id: 2,
-    name: "QUANTUM SMARTPHONE",
+    name: " SMARTPHONE",
     description: "256GB | Cosmic Purple",
     price: 99900,
     quantity: 1,
@@ -108,7 +108,7 @@ const initialWishlist: WishlistItem[] = [
   },
   {
     id: 2,
-    name: "ELITE MECHANICAL KEYBOARD",
+    name: "Mac",
     price: 15900,
     image: "/mac.webp",
   },
@@ -321,7 +321,7 @@ const CartPage: React.FC = () => {
       </p>
 
       {/* Savings Banner */}
-      <div className="mb-6 rounded-xl bg-gradient-to-r from-cyan-100 to-blue-100 px-6 py-3 text-green-700 font-medium">
+      <div className="mb-6 text-2xl rounded-xl bg-gradient-to-r from-cyan-100 to-blue-100 px-6 py-3 text-green-700 font-medium">
         🎉 You're saving ₹{totalSavings.toLocaleString()} on this order!
       </div>
 
@@ -359,7 +359,7 @@ const CartPage: React.FC = () => {
                 <div className="flex justify-between items-start">
                   <div>
                     <h2 className="font-semibold text-lg">{item.name}</h2>
-                    <p className="text-sm text-gray-500">
+                    <p className="text-xl text-gray-500">
                       {item.description}
                     </p>
                   </div>
@@ -479,7 +479,7 @@ const CartPage: React.FC = () => {
       </div>
 
       {/* Footer */}
-      <div className="sticky bottom-0 mt-10 bg-white rounded-2xl p-6 flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
+      <div className="sticky bottom-4 mt-10 mx-4 bg-white/70 backdrop-blur-xl rounded-2xl p-6 flex flex-col md:flex-row items-center justify-between gap-6 shadow-lg border border-white/20 ring-1 ring-black/5">
         <div className="flex gap-8 text-sm">
           <div>
             <p className="text-gray-500">Subtotal</p>
@@ -499,7 +499,7 @@ const CartPage: React.FC = () => {
           </div>
         </div>
 
-        <button className="bg-gradient-to-r from-purple-400 to-purple-600 text-white px-10 py-4 rounded-full text-lg shadow-lg hover:scale-[1.02] transition">
+        <button className="bg-gradient-to-r from-purple-400 to-purple-600 text-white px-10 py-4 rounded-full text-lg shadow-lg hover:scale-[1.02] hover:shadow-purple-500/25 transition-all">
           Buy Now
         </button>
       </div>
